@@ -84,7 +84,7 @@ production:
     <<: *default
     database: kiemtra_production
     username: kiemtra
-    url: <%= ENV["DATABASE_URL"] %>
+    url: <%= ENV['DATABASE_URL'] %>
     password: <%= ENV["KIEMTRA_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
